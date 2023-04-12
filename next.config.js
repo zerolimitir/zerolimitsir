@@ -15,4 +15,7 @@ module.exports = withBundleAnalyzer({
 		unoptimized: true,
 	},
 	reactStrictMode: true,
+	env: {
+		THEME_COLOR: "#0ea5e9",
+	},
 });
