@@ -11,7 +11,7 @@ const Header = () => {
 					<div className="flex gap-5 items-center justify-between ">
 						<Image
 							alt=""
-							src="../zero-icons.svg"
+							src="../zerolimit.svg"
 							width={10}
 							height={10}
 							className="w-10"

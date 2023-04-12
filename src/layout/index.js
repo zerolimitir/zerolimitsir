@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
 		<>
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/zero-icons.svg" />
+				<link rel="icon" href="/zerolimit.svg" />
 			</Head>
 
 			<Header />
