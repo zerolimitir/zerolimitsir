@@ -7,8 +7,8 @@ class Installation extends Component {
         return (
             <div>
                 <Head>
-                    <title>Zero Icons Installation</title>
-                    <meta name="description" content="React Icons package Installation, Huge Icons | Zero Icons"/>
+                    <title>React Huge Icons Installation</title>
+                    <meta name="description" content="React Icons package Installation, Huge Icons | Zero Limit"/>
                 </Head>
                 <DocHugeIcon/>
             </div>

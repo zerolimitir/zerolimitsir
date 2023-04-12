@@ -12,7 +12,7 @@ const Index = () => {
         <>
             <Head>
                 <title>React Icons package, Huge Icons</title>
-                <meta name="description" content="React Icons package, Huge Icons | Zero Icons"/>
+                <meta name="description" content="React Icons package, Huge Icons | Zero LimLimitit"/>
             </Head>
 
             <ShowIcon listOfIcons={{

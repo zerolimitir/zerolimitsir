@@ -10,14 +10,14 @@ export default function Package() {
 	return (
 		<>
 			<Head>
-				<title>Zero Icons Packages</title>
-				<meta name="description" content="All package Zero Icons" />
+				<title>Zero Limits Packages</title>
+				<meta name="description" content="All package Zero Limits" />
 			</Head>
 
 			<div className={"flex flex-col gap-10"}>
 				<div className="flex flex-col gap-5">
 					<h1 className="text-secondary text-base md:text-xl lg:text-2xl xl:text-3xl">
-						A list of Zero Icons packages
+						A list of Zero Limits packages
 					</h1>
 				</div>
 

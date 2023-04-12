@@ -38,7 +38,7 @@ export const Description = () => {
 				/>
 
 				<GITHUB
-					link="https://github.com/zero-icons/react-huge-icons"
+					link="https://github.com/zerolimitir/react-huge-icons"
 					title="Github"
 				/>
 			</div>

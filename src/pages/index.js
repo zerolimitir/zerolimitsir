@@ -7,8 +7,9 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Zero Icons Document</title>
-                <meta name="description" content="Developer of ReactJs and NextJs app packages | Zero Icons"/>
+                <title>Zero Limit</title>
+                <meta name="description" content="Developer of ReactJs and NextJs app packages | Zero Limit"/>
+                <meta name="google-site-verification" content="ltvuxmUAGhZP4OALQhuFZLnIq7WJHqxCs6LPJ8JrjJM" />
             </Head>
 
             <main>
