@@ -9,7 +9,6 @@ export default function Home() {
             <Head>
                 <title>Zero Icons Document</title>
                 <meta name="description" content="Developer of ReactJs and NextJs app packages | Zero Icons"/>
-                <meta name="google-site-verification" content="xxEIZavW6bQjznQdQgkjrbU5A9psCPeVm2RzRD2J-hw" />
             </Head>
 
             <main>

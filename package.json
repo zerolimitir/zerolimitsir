@@ -2,7 +2,7 @@
   "name": "zero-icons-site",
   "version": "0.3.0",
   "private": true,
-  "homepage": "https://zero-icons.ir/",
+  "homepage": "http://zerolimit.ir/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
