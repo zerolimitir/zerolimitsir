@@ -18,7 +18,7 @@ const Header = () => {
 						/>
 
 						<p className="font-bold text-base lg:text-lg xl:text-xl inline">
-							Zero Icons
+							Zero Limits
 						</p>
 					</div>
 				</Link>
