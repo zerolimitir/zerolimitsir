@@ -1,17 +1,58 @@
-import {cloneElement, useState} from "react";
+import {cloneElement, useReducer, useRef, useState} from "react";
 import styles from '@/styles/Icon.module.css';
+import {ChatClose} from "react-huge-icons/outline";
+
+// define states
+const setColorIcon = 'SET_COLOR_ICON'
+
+const initialState = {
+    color_icon: '#ffffff'
+}
+
+const reduce = (state, action) => {
+    const payload = action.payload
+    switch (action.type) {
+        case setColorIcon:
+            return {...state, color_icon: payload}
+        default:
+            return state
+    }
+}
 
 const ShowDetails = ({showDetail, setShowDetail, dataIcons}) => {
+    const [state, dispatch] = useReducer(reduce, initialState)
+
+    const handleDispatch = (define, value) => dispatch({type: define, payload: value})
+
+    const colorIcon = (e) => handleDispatch(setColorIcon, e.target.value)
+
     return (
         <>
             <div
                 className={`${styles.icon_modal} transition-all duration-500 ${showDetail ? 'visible opacity-100 z-[60]' : 'invisible opacity-0 z-0'}`}>
                 <div
-                    className="absolute bg-secondary rounded-md h-full w-full sm:h-4/5 sm:w-11/12 md:w-4/5 lg:h-5/6 lg:w-3/4 p-4 m-20">
+                    className="absolute bg-secondary rounded-md h-full w-full sm:h-4/5 sm:w-11/12 md:w-4/5 lg:h-5/6 lg:w-3/4 px-7 py-6 m-20">
                     {/* header */}
                     <div className="flex justify-between items-center">
                         {/* icon name */}
-                        <div className="flex items-center"><p className="">{dataIcons.name}</p></div>
+                        <p className="text-lg font-medium">{dataIcons.name}</p>
+                        {/* close modal */}
+                        <button onClick={() => setShowDetail(false)} className="p-2"><ChatClose className="w-7 h-7"/>
+                        </button>
+                    </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-10">
+                        {/* icon preview */}
+                        <p className="grid place-items-center border py-10 rounded-xl">
+                            <dataIcons.component className="w-44 h-44" color={state.color_icon}/>
+                        </p>
+                        {/* tools */}
+                        <div className="grid grid-cols-1 lg:grid-cols-2">
+                            {/* color */}
+                            <div className="w-full rounded-md bg-secondary-dark outline-none p-0.5 h-11">
+                                <input type="color"
+                                       className="w-full rounded-md p-1 bg-transparent h-full border border-solid" onChange={colorIcon} value={state.color_icon}/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
