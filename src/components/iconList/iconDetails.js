@@ -1,6 +1,6 @@
 import {cloneElement, useReducer, useRef, useState} from "react";
 import styles from '@/styles/Icon.module.css';
-import {ChatClose} from "react-huge-icons/outline";
+import {RemoveThin} from "react-huge-icons/bulk";
 
 // define states
 const setColorIcon = 'SET_COLOR_ICON'
@@ -37,7 +37,8 @@ const ShowDetails = ({showDetail, setShowDetail, dataIcons}) => {
                         {/* icon name */}
                         <p className="text-lg font-medium">{dataIcons.name}</p>
                         {/* close modal */}
-                        <button onClick={() => setShowDetail(false)} className="p-2"><ChatClose className="w-7 h-7"/>
+                        <button onClick={() => setShowDetail(false)} className="p-2">
+                            <RemoveThin className="w-10 h-10"/>
                         </button>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-10">
