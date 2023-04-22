@@ -49,7 +49,7 @@ const ShowDetails = ({showDetail, setShowDetail, dataIcons}) => {
                         {/* tools */}
                         <div className="grid grid-cols-1 lg:grid-cols-2">
                             {/* color */}
-                            <div className="w-full rounded-md bg-secondary-dark outline-none p-0.5 h-11">
+                            <div className="w-full rounded-md bg-secondary-dark outline-none p-0.5 h-12">
                                 <input type="color"
                                        className="w-full rounded-md p-1 bg-transparent h-full border border-solid" onChange={colorIcon} value={state.color_icon}/>
                             </div>
