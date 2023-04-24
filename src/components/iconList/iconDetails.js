@@ -1,6 +1,8 @@
 import {cloneElement, useReducer, useRef, useState} from "react";
 import styles from '@/styles/Icon.module.css';
 import {RemoveThin} from "react-huge-icons/bulk";
+import {Link} from "react-huge-icons/outline";
+import CustomCopyToClipboard from "@/helpers/copy-to-clipboard";
 
 // define states
 const setColorIcon = 'SET_COLOR_ICON'
@@ -35,7 +37,12 @@ const ShowDetails = ({showDetail, setShowDetail, dataIcons}) => {
                     {/* header */}
                     <div className="flex justify-between items-center">
                         {/* icon name */}
-                        <p className="text-lg font-medium">{dataIcons.name}</p>
+                        <CustomCopyToClipboard text={dataIcons.name}>
+                            <div className="flex items-center gap-5 cursor-pointer hover:text-primary">
+                                <p className="text-xl font-medium">{dataIcons.name}</p>
+                                <Link className="w-6 h-6 text-primary rotate-45"/>
+                            </div>
+                        </CustomCopyToClipboard>
                         {/* close modal */}
                         <button onClick={() => setShowDetail(false)} className="p-2">
                             <RemoveThin className="w-10 h-10"/>
