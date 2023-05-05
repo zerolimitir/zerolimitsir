@@ -1,0 +1,14 @@
+.icon_modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(2, 32, 56, .6);
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    place-items: center;
+}
